@@ -47,8 +47,8 @@ function App() {
   }
 
 const handleDelete = (id) => {
-  console.log(id, 'id');
-  /// filter
+  // console.log(id, 'id');
+  setTasks(tasks.filter(task => task.id !== id))
 }
   return (
     <div className="App">
